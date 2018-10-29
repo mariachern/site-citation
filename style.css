@@ -5,20 +5,69 @@
 html {
 	box-sizing: border-box;
 	width: 100%;
-	min-width: 1200px;
 	height: 100%;
 }
 
-body {    
+body {
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
-	letter-spacing: 0.375px;
+	letter-spacing: 0.025em;
 	color: #000000;
 
 	background-color: #e9ebea;
 	
 	padding: 0;
 	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header .container {
+	min-width: 1200px;
+	padding: 30px 21px 0px;
+}
+
+header .index-logo {
+	margin: 0px 0px 32px;
+	padding: 0;
+}
+
+header .desktop-nav {
+	display: flex;
+
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+.desktop-nav .desktop-nav-item {
+	padding: 0px 33px 0px 0px;
+}
+
+.desktop-nav .desktop-nav-item:first-child {
+	padding-left: 33px;
+}
+
+.desktop-nav .desktop-nav-item:last-child {
+	padding-right: 0;
+}
+
+.desktop-nav-item a {
+	color: #000000;
+
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.desktop-nav-item a:hover,
+.desktop-nav-item a:focus {
+	text-decoration: underline;
 }
 
